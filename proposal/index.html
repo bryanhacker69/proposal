@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Will You Be My Girlfriend?</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>I know we’ve had our ups and downs, but I still believe in us.<br>Would you give us another shot? 💘</h1>
+  <div class="buttons">
+    <button onclick="alert('Yay!! 💖 I’m so lucky!! I love you!!')">Yes 💖</button>
+    <button id="no-btn">No 😢</button>
+  </div>
+
+  <script>
+    // Create floating hearts
+    setInterval(() => {
+      const heart = document.createElement('div');
+      heart.className = 'heart';
+      heart.style.left = Math.random() * 100 + 'vw';
+      document.body.appendChild(heart);
+      setTimeout(() => heart.remove(), 6000);
+    }, 500);
+  </script>
+</body>
+</html>
